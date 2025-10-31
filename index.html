@@ -2,102 +2,127 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>吃瓜网 CGW321.COM - 娱乐聚合导航</title>
-  <meta name="description" content="吃瓜网 CGW321.COM - 聚合全网娱乐资讯、明星动态、校园事件。中英俄三语版本，健康吃瓜不打烊！">
-  <meta name="keywords" content="吃瓜网, 娱乐, 爆料, 明星八卦, CGW321, gossip, 娱乐新闻, 娱乐八卦, 校园事件">
-  <meta name="robots" content="index, follow">
-
-  <!-- ✅ Yandex SEO 优化 -->
-  <meta name="yandex-verification" content="your-verification-code-here">
-  <meta name="yandex" content="index, follow">
-  <meta name="yandex-language" content="zh, en, ru">
-  <meta name="yandex-content-language" content="zh, en, ru">
-  <meta name="yandex-meta" content="吃瓜网, 娱乐新闻, 明星八卦, CGW321, китайские новости, 娱乐平台">
-
-  <!-- ✅ Open Graph 多语支持 -->
-  <meta property="og:title" content="吃瓜网 CGW321.COM - 娱乐聚合导航">
-  <meta property="og:description" content="聚合全网娱乐爆料、明星八卦、校园资讯。永久免费，健康吃瓜不打烊！">
-  <meta property="og:image" content="https://cgw432.github.io/logo.png">
-  <meta property="og:url" content="https://cgw432.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:locale:alternate" content="ru_RU">
-
-  <link rel="icon" type="image/png" href="logo.png">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>吃瓜网 CGW321.COM</title>
+  <link rel="icon" href="logo.png" />
   <style>
     body {
-      background: #f9fafb;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Microsoft YaHei", sans-serif;
+      text-align: center;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
     }
-    .container { max-width: 900px; }
-    .logo { width: 120px; border-radius: 50%; border: 3px solid #ff6b6b; }
-    .lang-switch { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
-    .lang-btn {
-      background: #fff;
-      border: 2px solid #ff6b6b;
-      color: #ff6b6b;
-      padding: 6px 10px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+    header img {
+      width: 150px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #ff4d4d;
+      margin-top: 10px;
+    }
+    .lang-buttons {
+      margin: 15px 0;
+    }
+    .lang-buttons button {
+      background-color: #ffb3b3;
+      border: none;
+      padding: 6px 12px;
+      margin: 0 4px;
+      border-radius: 5px;
       cursor: pointer;
-      transition: 0.2s;
     }
-    .lang-btn:hover { background: #ff6b6b; color: #fff; }
-    .flag { width: 20px; height: 14px; }
-    .fade { animation: fadeIn 0.5s ease-in-out; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .table th { background: #ff6b6b; color: #fff; }
+    .lang-buttons button:hover {
+      background-color: #ff9999;
+    }
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 700px;
+      border: 2px solid #ff8080;
+    }
+    th {
+      background-color: #ff8080;
+      color: white;
+      padding: 10px;
+    }
+    td {
+      border: 1px solid #ffcccc;
+      padding: 10px;
+    }
+    footer {
+      margin: 30px 0;
+      color: gray;
+    }
   </style>
 </head>
-
 <body>
-  <div class="container py-5 text-center">
-    <img src="logo.png" alt="吃瓜网 Logo" class="logo mb-3">
-    <h1 style="color:#ff6b6b;">吃瓜网 CGW321.COM</h1>
+  <header>
+    <img src="logo.png" alt="吃瓜网 Logo" />
+    <h1>吃瓜网 CGW321.COM</h1>
+  </header>
 
-    <!-- 语言切换按钮（SEO用） -->
-    <div class="lang-switch">
-      <button class="lang-btn" onclick="setLang('zh')"><img src="https://flagcdn.com/w20/cn.png" class="flag" alt=""> 中文</button>
-      <button class="lang-btn" onclick="setLang('en')"><img src="https://flagcdn.com/w20/us.png" class="flag" alt=""> English</button>
-      <button class="lang-btn" onclick="setLang('ru')"><img src="https://flagcdn.com/w20/ru.png" class="flag" alt=""> Русский</button>
-    </div>
-
-    <!-- ✅ 中文主内容 -->
-    <div id="content-zh" class="fade">
-      <p>🔥 吃瓜网是全网最全的娱乐爆料聚合平台，永久免费，无限制访问！</p>
-      <p>📦 每日更新明星八卦、影视热点、校园内幕等公开资讯。</p>
-      <table class="table table-bordered">
-        <tr><th>类型</th><th>说明</th><th>链接</th></tr>
-        <tr><td>主入口</td><td>国内免翻墙访问</td><td><a href="https://cgwang93.com" target="_blank">https://cgwang93.com</a></td></tr>
-        <tr><td>永久地址</td><td>防失联通道</td><td><a href="https://cgw321.com" target="_blank">https://cgw321.com</a></td></tr>
-        <tr><td>APP入口</td><td>手机观影流畅入口</td><td><a href="https://cgw.ai" target="_blank">https://cgw.ai</a></td></tr>
-      </table>
-    </div>
-
-    <!-- ✅ 英文/俄文内容（仅爬虫读取） -->
-    <div id="content-en" style="display:none;">
-      <p>🔥 CGW321.COM - Free Chinese Entertainment Aggregator. Updated daily with celebrity gossip and hot trends.</p>
-    </div>
-    <div id="content-ru" style="display:none;">
-      <p>🔥 CGW321.COM — крупнейший развлекательный сайт с ежедневными новостями и слухами о звездах.</p>
-    </div>
-
-    <footer class="mt-4">
-      <p>© 2025 CGW321.COM • Powered by GitHub Pages</p>
-    </footer>
+  <div class="lang-buttons">
+    <button id="zh">中文</button>
+    <button id="en">English</button>
+    <button id="ru">Русский</button>
   </div>
 
+  <div id="content"></div>
+
+  <footer>
+    <p>© 2025 CGW321.COM • Powered by GitHub Pages</p>
+  </footer>
+
   <script>
-    function setLang(lang) {
-      // 对SEO保持结构，但只展示中文内容
-      alert("本网站主要提供中文内容，国际版本仅供搜索引擎收录。");
+    const translations = {
+      zh: `
+        <p>🔥 吃瓜网是全网最全的娱乐爆料聚合平台，永久免费，无限制访问！</p>
+        <p>📅 每日更新明星八卦、影视热点、校园内幕等公开资讯。</p>
+        <table>
+          <tr><th>类型</th><th>说明</th><th>链接</th></tr>
+          <tr><td>主入口</td><td>国内免翻墙访问</td><td><a href="https://cgwang93.com" target="_blank">https://cgwang93.com</a></td></tr>
+          <tr><td>永久地址</td><td>防失联通道</td><td><a href="https://cgw321.com" target="_blank">https://cgw321.com</a></td></tr>
+          <tr><td>APP入口</td><td>手机观影流畅入口</td><td><a href="https://cgw.ai" target="_blank">https://cgw.ai</a></td></tr>
+        </table>
+      `,
+      en: `
+        <p>🔥 CGW321 is the ultimate entertainment and gossip aggregation platform — free forever, no restrictions!</p>
+        <p>📅 Updated daily with celebrity news, movie trends, and campus highlights.</p>
+        <table>
+          <tr><th>Type</th><th>Description</th><th>Link</th></tr>
+          <tr><td>Main Access</td><td>Accessible without VPN in China</td><td><a href="https://cgwang93.com" target="_blank">https://cgwang93.com</a></td></tr>
+          <tr><td>Permanent Address</td><td>Anti-blocking channel</td><td><a href="https://cgw321.com" target="_blank">https://cgw321.com</a></td></tr>
+          <tr><td>APP Access</td><td>Mobile-friendly video entrance</td><td><a href="https://cgw.ai" target="_blank">https://cgw.ai</a></td></tr>
+        </table>
+      `,
+      ru: `
+        <p>🔥 CGW321 — это крупнейшая платформа развлекательных новостей и слухов, всегда бесплатная и без ограничений!</p>
+        <p>📅 Ежедневные обновления: новости, кино, кампус и многое другое.</p>
+        <table>
+          <tr><th>Тип</th><th>Описание</th><th>Ссылка</th></tr>
+          <tr><td>Главный вход</td><td>Доступ без VPN в Китае</td><td><a href="https://cgwang93.com" target="_blank">https://cgwang93.com</a></td></tr>
+          <tr><td>Постоянный адрес</td><td>Резервный канал</td><td><a href="https://cgw321.com" target="_blank">https://cgw321.com</a></td></tr>
+          <tr><td>Приложение</td><td>Мобильная версия</td><td><a href="https://cgw.ai" target="_blank">https://cgw.ai</a></td></tr>
+        </table>
+      `
+    };
+
+    const contentDiv = document.getElementById("content");
+
+    function setLanguage(lang) {
+      localStorage.setItem("lang", lang);
+      contentDiv.innerHTML = translations[lang];
     }
+
+    // 初始化显示
+    const savedLang = localStorage.getItem("lang") || "zh";
+    setLanguage(savedLang);
+
+    document.getElementById("zh").onclick = () => setLanguage("zh");
+    document.getElementById("en").onclick = () => setLanguage("en");
+    document.getElementById("ru").onclick = () => setLanguage("ru");
   </script>
 </body>
 </html>
